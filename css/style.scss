@@ -1,0 +1,42 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    color: #fff;
+    background-color: #0AA3BD;
+    border-color: #0AA3BD;
+  }
+
+  .btn {
+    border-radius: 0.625rem;
+  }
+
+  .btn-white {
+    color: #7D7D7D;
+    background-color: #fff;
+    border-color: #fff;
+  }
+  .btn-white:hover {
+    color: #7D7D7D;
+    background-color: #fff;
+    border-color: #fff;
+  }
+  .btn-white:focus, .btn-white.focus {
+    color: #7D7D7D;
+    background-color: #fff;
+    box-shadow: none
+  }
+  .btn-white.disabled, .btn-white:disabled {
+    color: #7D7D7D;
+    background-color: #fff;
+  }
+  .btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active, .show > .btn-white.dropdown-toggle {
+    color: #7D7D7D;
+    background-color: rgb(253, 234, 234);
+  }
+  .btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus, .show > .btn-white.dropdown-toggle:focus {
+    box-shadow: none
+  }
+
+  .form-control {
+    border-radius: 0.625rem;
+  }
