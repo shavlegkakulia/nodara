@@ -395,17 +395,24 @@ footer .some-text {
   margin: 0 auto;
 }
 
-.sait-body .input-content .row .col {
+.sait-body .input-content .tab {
   display: inline-grid;
   justify-content: center;
+  width: 100%;
 }
 
-.sait-body .input-content .row .col .select {
+.sait-body .input-content .select {
   margin-top: 5px;
   width: 137px;
+  font-size: 16.88px;
+  font-weight: 500;
+  height: 23px;
+  font-family: ITCAvantGardePro;
+  padding: 0 0 0 10px;
+  color: #7D7D7D;
 }
 
-.sait-body .input-content .row .col .title {
+.sait-body .input-content .title {
   font-size: 13.73px;
   font-weight: 400;
   color: #fff;
@@ -413,7 +420,7 @@ footer .some-text {
   text-align: left;
 }
 
-.sait-body .input-content .row .col .b-left {
+.sait-body .input-content .b-left {
   font-size: 16.88px;
   font-weight: 500;
   height: 20px;
@@ -425,7 +432,7 @@ footer .some-text {
   line-height: 20px;
 }
 
-.sait-body .input-content .row .col .b-right {
+.sait-body .input-content .b-right {
   display: flex;
   justify-content: flex-end;
 }
@@ -483,7 +490,12 @@ footer .some-text {
   width: 100%;
   display: block;
   background: #fff;
-  padding: 40px 112px;
+  padding: 0px 112px;
+}
+
+.steps .row .col{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .steps .row .title {
@@ -735,8 +747,8 @@ footer .some-text {
 }
 
 .row.form .check {
-  width: 43.5px;
-  height: 43.5px;
+  width: 42px;
+  height: 42px;
   display: flex;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -749,7 +761,7 @@ footer .some-text {
 .row.form .check.active::before {
   content: "";
   width: 38px;
-  height: 38px;
+  height: 37px;
   display: block;
   background: #fff;
   border-radius: 8px;
@@ -862,6 +874,7 @@ footer .some-text {
 
   .sait-body .input-content .description span {
     width: auto;
+    padding: 0 15px;
   }
 
   .sait-body .input-content .apply-btn {
@@ -930,6 +943,7 @@ footer .some-text {
 
   footer .description span {
     width: auto;
+    padding: 0 15px;
   }
 
   footer .all-rights {
@@ -938,6 +952,7 @@ footer .some-text {
 
   footer .some-text {
     width: auto;
+    padding: 0 15px;
   }
 }
 
