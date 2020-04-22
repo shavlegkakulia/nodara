@@ -341,14 +341,14 @@ footer .some-text {
 .sait-body .taim-content .rt-container .clockB {
   position: absolute;
   top: 24px;
-  left: 37px;
+  left: 38px;
 }
 
 .sait-body .taim-content .rt-container .arrow.r-0 {
   position: absolute;
   z-index: 99;
   top: 73px;
-  left: 112px;
+  left: 111px;
   transform: rotate(100deg);
 }
 
@@ -356,23 +356,23 @@ footer .some-text {
   position: absolute;
   z-index: 99;
   top: 81px;
-  left: 78px;
+  left: 76.5px;
   transform: rotate(-10deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-2 {
   position: absolute;
   z-index: 99;
-  top: 102px;
-  left: 85px;
+  top: 104px;
+  left: 81px;
   transform: rotate(-76deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-3 {
   position: absolute;
   z-index: 99;
-  top: 109px;
-  left: 104px;
+  top: 111px;
+  left: 101px;
   transform: rotate(-133deg);
 }
 
@@ -380,7 +380,7 @@ footer .some-text {
   position: absolute;
   z-index: 99;
   top: 106px;
-  left: 110px;
+  left: 111px;
   transform: rotate(-161deg);
 }
 
@@ -505,6 +505,7 @@ footer .some-text {
   font-weight: 500;
   color: #0aa3bd;
   font-family: ITCAvantGardePro;
+  cursor: pointer;
 }
 
 .steps .row .img {
@@ -512,7 +513,7 @@ footer .some-text {
   height: 85px;
   display: block;
   margin: 18px auto;
-  border-radius: 50%;
+  border-radius: 50%;  cursor: pointer;
 }
 
 .steps .row .desc {
@@ -522,6 +523,7 @@ footer .some-text {
   font-weight: 400;
   color: #575757;
   font-family: ITCAvantGardePro;
+  cursor: pointer;
 }
 
 .container-md {
@@ -608,6 +610,18 @@ footer .some-text {
   margin-top: 15px;
 }
 
+.row.form .col span.yes {
+  width: 103px;
+  display: flex;
+  height: 100%;
+  color: #fff;
+  font-size: 19.39px;
+  font-family: ITCAvantGardePro;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .row.form .col span.no {
   width: 103px;
   display: flex;
@@ -678,6 +692,7 @@ footer .some-text {
   color: #fff;
   text-align: center;
   line-height: 29px;
+  user-select: none;
 }
 
 .row.form .col .inc-dec span:nth-child(2) {
@@ -702,6 +717,7 @@ footer .some-text {
   color: #fff;
   text-align: center;
   line-height: 30px;
+  user-select: none;
 }
 
 .row.form .col .form-group .form-control {
@@ -822,6 +838,7 @@ footer .some-text {
 
   .logo-container .logo {
     height: 100%;
+    cursor: pointer;
   }
 
   .menu-container {
@@ -983,6 +1000,7 @@ footer .some-text {
 
   .logo-container .logo {
     height: 100%;
+    cursor: pointer;
   }
 
   .menu-container {
@@ -1398,8 +1416,8 @@ footer .some-text {
   .sait-body .taim-content .rt-container .arrow.r-2 {
     position: absolute;
     z-index: 99;
-    top: 102px;
-    left: 107px;
+    top: 104px;
+    left: 81px;
     transform: rotate(-76deg);
   }
 
@@ -1567,6 +1585,7 @@ footer .some-text {
   margin: 20px;
   float: left;
   transform: rotate(45deg);
+  transition: all 3s ease-in-out;
 }
 .radialProgressBar .overlay {
   border-radius: 50%;

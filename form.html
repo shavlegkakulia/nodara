@@ -10,6 +10,54 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./custom.css" />
 
+    <script>
+
+    function changeResident(val){
+      var yes = document.querySelector('.yes');
+      var no = document.querySelector('.no');
+
+      if(val == 1){
+        no.classList.remove(['active']);
+        yes.classList.add('active');
+      }else{
+        yes.classList.remove(['active']);
+        no.classList.add('active');
+      }
+    }
+
+    function checkActive(el){
+    
+
+      if(el.classList.length > 1){
+        el.classList.remove(['active']);
+      }else{
+        el.classList.add('active');
+      }
+    }
+
+    function updateRange(val){
+      document.getElementById("rangeValue").innerHTML = val;
+    }
+
+    function changeRangeVal(action){
+      var val = Number(document.getElementById("noofdependantsInput").value);
+   
+      if(action == '-'){
+        val--;
+      }else{
+        val++;
+      }
+      
+      
+      document.getElementById("noofdependantsInput").value = val;
+      if(val >= 0 && val <= 100)
+      document.getElementById("rangeValue").innerHTML = val;
+      }
+    
+
+    </script>
+
+
     <!-- <base href="/"> -->
     <title>Design</title>
   </head>
@@ -18,7 +66,7 @@
       <header>
         <div class="panel">
           <div class="logo-container">
-            <img src="Tick Tock Loans - Logo.png" class="logo" />
+            <img src="Tick Tock Loans - Logo.png" onclick="javascript:location.href = '/'" class="logo" />
           </div>
           <div class="menu-container">
             <div class="menu-form">
@@ -86,6 +134,8 @@
                       id="titleSelect"
                     >
                       <option>Select</option>
+                      <option>Item 1</option>
+                      <option>Item 2</option>
                     </select>
                     <small id="titleHelp" class="form-text text-muted"
                       >Require text here</small
@@ -133,12 +183,44 @@
                   <div class="col">
                     <div class="form-group">
                       <label for="dayInput"></label>
-                      <input
-                        type="text"
-                        class="form-control no-min-size"
-                        id="dayInput"
-                        aria-describedby="dayHelp"
-                      />
+                      <select
+                      class="form-control"
+                      aria-describedby="dayHelp"
+                      id="dayInput"
+                    >
+                      <option>Day</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                    </select>
                       <small id="dayHelp" class="form-text text-muted"
                         >Require text here</small
                       >
@@ -147,12 +229,25 @@
                   <div class="col">
                     <div class="form-group">
                       <label for=""></label>
-                      <input
-                        type="text"
-                        class="form-control no-min-size"
-                        id="monthInput"
-                        aria-describedby="monthHelp"
-                      />
+                      <select
+                      class="form-control"
+                      aria-describedby="monthHelp"
+                      id="monthInput"
+                    >
+                      <option>Month</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
                       <small id="monthHelp" class="form-text text-muted"
                         >Require text here</small
                       >
@@ -161,12 +256,34 @@
                   <div class="col">
                     <div class="form-group">
                       <label for=""></label>
-                      <input
-                        type="text"
-                        class="form-control no-min-size"
-                        id="yearInput"
-                        aria-describedby="yearHelp"
-                      />
+                      <select
+                      class="form-control"
+                      aria-describedby="montyearHelphHelp"
+                      id="yearInput"
+                    >
+                      <option>Year</option>
+                      <option>2020</option>
+                      <option>2019</option>
+                      <option>2018</option>
+                      <option>2017</option>
+                      <option>2016</option>
+                      <option>2015</option>
+                      <option>2014</option>
+                      <option>2013</option>
+                      <option>2012</option>
+                      <option>2011</option>
+                      <option>2010</option>
+                      <option>2009</option>
+                      <option>2008</option>
+                      <option>2007</option>
+                      <option>2006</option>
+                      <option>2005</option>
+                      <option>2004</option>
+                      <option>2003</option>
+                      <option>2002</option>
+                      <option>2001</option>
+                      <option>2000</option>
+                    </select>
                       <small id="yearHelp" class="form-text text-muted"
                         >Require text here</small
                       >
@@ -192,8 +309,8 @@
                   >Resident of England or Wales</label
                 >
                 <div class="yesNo">
-                  <span class="yes active">Yes</span>
-                  <span class="no">No</span>
+                  <span class="yes active" onclick="changeResident(1)">Yes</span>
+                  <span class="no" onclick="changeResident(2)">No</span>
                 </div>
               </div>
               <div class="form-group">
@@ -260,15 +377,16 @@
                     >No. of dependants</label
                   >
                   <div class="inc-dec">
-                    <span class="dec">-</span>
-                    <span>0</span>
-                    <span class="inc">+</span>
+                    <span class="dec" onclick="changeRangeVal('-')">-</span>
+                    <span id="rangeValue">0</span>
+                    <span class="inc" onclick="changeRangeVal('+')">+</span>
                   </div>
                 </div>
                 <input
                   type="range"
                   class="form-control-reset margin-top-37"
                   id="noofdependantsInput"
+                  min="0" max="100" oninput="updateRange(this.value);" value="0"
                 />
               </div>
             </div>
@@ -283,6 +401,9 @@
                   aria-describedby="wagefrequencyHelp"
                 >
                   <option>select</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
                 </select>
                 <small id="wagefrequencyHelp" class="form-text text-muted"
                   >Require text here</small
@@ -300,6 +421,9 @@
                   aria-describedby="whenwouldliketostartyourrequyementsHelp"
                 >
                   <option>select</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
                 </select>
                 <small
                   id="whenwouldliketostartyourrequyements"
@@ -309,7 +433,7 @@
               </div>
               <div class="row checks">
                 <div class="col">
-                  <div class="check"></div>
+                  <div class="check" onclick="checkActive(this)"></div>
                 </div>
                 <div class="col">
                   <span class="check-desc">
@@ -322,7 +446,7 @@
 
               <div class="row checks">
                 <div class="col">
-                  <div class="check active"></div>
+                  <div class="check active" onclick="checkActive(this)"></div>
                 </div>
                 <div class="col">
                   <span class="check-desc">
@@ -366,13 +490,13 @@
         <p class="title">NO APPLICATION FEES, NO TRANSFER FEES!</p>
         <div class="privacy-terms-container">
           <div class="items">
-            <a class="item">Privacy Policy</a>
+            <a href="#" class="item">Privacy Policy</a>
             <span class="splitter"></span>
-            <a class="item">Terms & Conditions</a>
+            <a href="#" class="item">Terms & Conditions</a>
             <span class="splitter"></span>
-            <a class="item">Complaints</a>
+            <a href="#" class="item">Complaints</a>
             <span class="splitter"></span>
-            <a class="item">Contacts</a>
+            <a href="#" class="item">Contacts</a>
           </div>
         </div>
         <div class="description">

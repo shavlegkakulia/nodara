@@ -10,6 +10,32 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./custom.css" />
 
+    <script>
+      function chngeTick(el){
+        var progress = document.querySelector('#tikProgress');
+        var arrow = document.querySelector('#tikArrow');
+
+        progress.removeAttribute('class');
+        progress.setAttribute('class', `radialProgressBar progress-${el.value}`);
+
+        arrow.removeAttribute('class');
+        arrow.setAttribute('class', `arrow r-${el.value}`);
+
+      }
+
+      function chngeTock(el){
+        var progress = document.querySelector('#tokProgress');
+        var arrow = document.querySelector('#tokArrow');
+
+        progress.removeAttribute('class');
+        progress.setAttribute('class', `radialProgressBar progress-${el.value}`);
+
+        arrow.removeAttribute('class');
+        arrow.setAttribute('class', `arrow r-${el.value}`);
+
+      }
+    </script>
+
     <!-- <base href="/"> -->
     <title>Design</title>
   </head>
@@ -83,7 +109,7 @@
               <div class="rt-container center-vertical">
              <div>
               <img src="ClockB.svg" class="clockB" />
-              <img src="arrow.svg" class="arrow r-2" />
+              <img src="arrow.svg" id="tikArrow" class="arrow r-0" />
               <div class="line-first">
                 <span>500</span>
                 <span>50</span>
@@ -96,7 +122,7 @@
                 <span>300</span>
               </div>
              </div>
-                <div class="radialProgressBar progress-2">
+                <div id="tikProgress" class="radialProgressBar progress-0">
                   <div class="triangle"></div>
                   <div class="overlay"></div>
                 </div>
@@ -104,10 +130,14 @@
                 <div class="input-content">
                   <div class="tab">
                   <span class="title">Total to repay:</span>
-                  <select
+                  <select onchange="chngeTick(this)"
                   class="form-control select"
                 >
-                  <option>£500</option>
+                <option value="0">£50</option>
+                  <option value="1">£500</option>
+                  <option value="2">£400</option>
+                  <option value="3">£300</option>
+                  <option value="4">£200</option>
                 </select>
                 </div>
                 </div>
@@ -131,8 +161,8 @@
                 <div class="line-last">
                   <span>3 mths</span>
                 </div>
-                <img src="arrow.svg" class="arrow r-3" />
-                <div class="radialProgressBar progress-3">
+                <img src="arrow.svg" id="tokArrow" class="arrow r-0" />
+                <div id="tokProgress" class="radialProgressBar progress-0">
                   <div class="triangle"></div>
                   <div class="overlay"></div>
                 </div>
@@ -140,10 +170,14 @@
                 <div class="input-content">
                   <div class="tab">
                   <span class="title">Monthly repayment:</span>
-                  <select
+                  <select onchange="chngeTock(this)"
                   class="form-control select"
                 >
-                  <option>3 Months</option>
+                  <option value="0">1 Months</option>
+                  <option value="1">5 Months</option>
+                  <option value="2">4 Months</option>
+                  <option value="3">3 Months</option>
+                  <option value="4">2 Months</option>
                 </select>
                 </div>
                 </div>
@@ -199,13 +233,13 @@
       <p class="title">NO APPLICATION FEES, NO TRANSFER FEES!</p>
       <div class="privacy-terms-container">
         <div class="items">
-          <a class="item">Privacy Policy</a>
+          <a href="#" class="item">Privacy Policy</a>
           <span class="splitter"></span>
-          <a class="item">Terms & Conditions</a>
+          <a href="#" class="item">Terms & Conditions</a>
           <span class="splitter"></span>
-          <a class="item">Complaints</a>
+          <a href="#" class="item">Complaints</a>
           <span class="splitter"></span>
-          <a class="item">Contacts</a>
+          <a href="#" class="item">Contacts</a>
         </div>
       </div>
       <div class="description">
