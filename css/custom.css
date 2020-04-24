@@ -344,44 +344,49 @@ footer .some-text {
   left: 38px;
 }
 
+.sait-body .taim-content .rt-container .arrow {
+  transition: transform 1s ease;
+  transform: rotate(-135deg);
+}
+
 .sait-body .taim-content .rt-container .arrow.r-0 {
   position: absolute;
   z-index: 99;
-  top: 73px;
-  left: 111px;
-  transform: rotate(100deg);
+  left: 106px;
+  top: 38px;
+  transform: rotate(225deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-1 {
   position: absolute;
   z-index: 99;
-  top: 81px;
-  left: 76.5px;
-  transform: rotate(-10deg);
+  left: 106px;
+  top: 38px;
+  transform: rotate(115deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-2 {
   position: absolute;
   z-index: 99;
-  top: 104px;
-  left: 81px;
-  transform: rotate(-76deg);
+  left: 106px;
+  top: 38px;
+  transform: rotate(45deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-3 {
   position: absolute;
   z-index: 99;
-  top: 111px;
-  left: 101px;
-  transform: rotate(-133deg);
+  left: 106px;
+  top: 38px;
+  transform: rotate(-13deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-4 {
   position: absolute;
   z-index: 99;
-  top: 106px;
-  left: 111px;
-  transform: rotate(-161deg);
+  left: 106px;
+  top: 38px;
+  transform: rotate(-45deg);
 }
 
 .sait-body .input-content {
@@ -409,7 +414,7 @@ footer .some-text {
   height: 23px;
   font-family: ITCAvantGardePro;
   padding: 0 0 0 10px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .sait-body .input-content .title {
@@ -493,7 +498,7 @@ footer .some-text {
   padding: 0px 112px;
 }
 
-.steps .row .col{
+.steps .row .col {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -513,7 +518,8 @@ footer .some-text {
   height: 85px;
   display: block;
   margin: 18px auto;
-  border-radius: 50%;  cursor: pointer;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .steps .row .desc {
@@ -1397,44 +1403,49 @@ footer .some-text {
     left: 66px;
   }
 
+  .sait-body .taim-content .rt-container .arrow {
+    transition: transform 1s ease;
+    transform: rotate(224deg);
+  }
+
   .sait-body .taim-content .rt-container .arrow.r-0 {
     position: absolute;
     z-index: 99;
-    top: 73px;
+    top: 38px;
     left: 134px;
-    transform: rotate(100deg);
+    transform: rotate(224deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-1 {
     position: absolute;
     z-index: 99;
-    top: 81px;
-    left: 100px;
-    transform: rotate(-10deg);
+    top: 38px;
+    left: 134px;
+    transform: rotate(116deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-2 {
     position: absolute;
     z-index: 99;
-    top: 104px;
-    left: 105px;
-    transform: rotate(-76deg);
+    top: 38px;
+    left: 134px;
+    transform: rotate(44deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-3 {
     position: absolute;
     z-index: 99;
-    top: 109px;
-    left: 126px;
-    transform: rotate(-133deg);
+    top: 38px;
+    left: 134px;
+    transform: rotate(-14deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-4 {
     position: absolute;
     z-index: 99;
-    top: 106px;
-    left: 132px;
-    transform: rotate(-161deg);
+    top: 38px;
+    left: 134px;
+    transform: rotate(-46deg);
   }
 
   .sait-body .input-content {
