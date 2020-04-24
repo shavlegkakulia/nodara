@@ -603,6 +603,10 @@ footer .some-text {
   min-width: 320px;
 }
 
+.row.form .col input.calendar {
+  min-width: 280px;
+}
+
 .row.form .col label.no-margin {
   margin: 0;
 }
