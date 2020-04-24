@@ -14,6 +14,7 @@ router.get('/form',function(req,res){
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/assets'));
 app.use(express.static(__dirname + '/fonts'));
+app.use(express.static(__dirname + '/js'));
 
 app.use('/', router);
 app.listen(process.env.port || 8080);

@@ -726,7 +726,7 @@ footer .some-text {
   user-select: none;
 }
 
-.row.form .col .form-group .form-control {
+.row.form .col .form-group .form-control, .row.form .col .form-group .input-group-append {
   margin-top: 2px !important;
 }
 

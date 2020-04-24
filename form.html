@@ -9,6 +9,8 @@
     />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./tempusdominus-bootstrap-4.min.css" />
 
     <script>
 
@@ -292,6 +294,18 @@
                 </div>
               </div>
               <div class="form-group">
+                <label for="calendarInput" class="required">Choose date</label>
+                <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" id="calendarInput" data-target="#datetimepicker1"/>
+                  <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                      <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+              </div>
+                <small id="dateHelp" class="form-text text-muted"
+                  >Require text here</small
+                >
+              </div>
+              <div class="form-group">
                 <label for="emailInput" class="required">Email address</label>
                 <input
                   type="email"
@@ -535,5 +549,12 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="moment.min.js"></script>
+    <script type="text/javascript" src="tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+   $(function () {
+                $('#datetimepicker').datetimepicker();
+            });
+    </script>
   </body>
 </html>
