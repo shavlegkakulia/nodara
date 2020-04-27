@@ -10,32 +10,6 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./custom.css" />
 
-    <script>
-      function chngeTick(el){
-        var progress = document.querySelector('#tikProgress');
-        var arrow = document.querySelector('#tikArrow');
-
-        progress.removeAttribute('class');
-        progress.setAttribute('class', `radialProgressBar progress-${el.value}`);
-
-        arrow.removeAttribute('class');
-        arrow.setAttribute('class', `arrow r-${el.value}`);
-
-      }
-
-      function chngeTock(el){
-        var progress = document.querySelector('#tokProgress');
-        var arrow = document.querySelector('#tokArrow');
-
-        progress.removeAttribute('class');
-        progress.setAttribute('class', `radialProgressBar progress-${el.value}`);
-
-        arrow.removeAttribute('class');
-        arrow.setAttribute('class', `arrow r-${el.value}`);
-
-      }
-    </script>
-
     <!-- <base href="/"> -->
     <title>Design</title>
   </head>
@@ -108,6 +82,7 @@
              
               <div class="rt-container center-vertical">
              <div>
+              <div id="pbar1" class="pbar"></div>
               <img src="ClockB.svg" class="clockB" />
               <img src="arrow.svg" id="tikArrow" class="arrow r-0" />
               <div class="line-first">
@@ -130,7 +105,7 @@
                 <div class="input-content">
                   <div class="tab">
                   <span class="title">Total to repay:</span>
-                  <select onchange="chngeTick(this)"
+                  <select onchange="tikProgress(this)"
                   class="form-control select"
                 >
                 <option value="0">£50</option>
@@ -149,6 +124,7 @@
               </div>
              
               <div class="rt-container center-vertical tok-content">
+                <div id="pbar2" class="pbar pbar2"></div>
                 <img src="ClockB.svg" class="clockB" />
                 <div class="line-first">
                   <span>5 mths</span>
@@ -170,7 +146,7 @@
                 <div class="input-content">
                   <div class="tab">
                   <span class="title">Monthly repayment:</span>
-                  <select onchange="chngeTock(this)"
+                  <select onchange="tokProgress(this)"
                   class="form-control select"
                 >
                   <option value="0">1 Months</option>
@@ -278,6 +254,43 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
+    <script src="progressbar.min.js"></script>
+  <script>
+    // progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Circle(pbar1, {
+  strokeWidth: 6,
+  easing: 'easeInOut',
+  duration: 1000,
+  color: '#0aa3bd',
+  trailColor: 'transparent',
+  trailWidth: 1,
+  svgStyle: null
+});
+var bar2 = new ProgressBar.Circle(pbar2, {
+  strokeWidth: 6,
+  easing: 'easeInOut',
+  duration: 1000,
+  color: '#0aa3bd',
+  trailColor: 'transparent',
+  trailWidth: 1,
+  svgStyle: null
+});
+var steps = [0, 0.30, 0.49, 0.66, 0.75];
+function tikProgress(v){
+  bar.animate(steps[v.value]);  // Number from 0.0 to 1.0
+  var arrow = document.querySelector('#tikArrow');
+  arrow.removeAttribute('class');
+  arrow.setAttribute('class', `arrow r-${v.value}`);
+}
+
+function tokProgress(v){
+  bar2.animate(steps[v.value]);  // Number from 0.0 to 1.0
+  var arrow = document.querySelector('#tokArrow');
+  arrow.removeAttribute('class');
+  arrow.setAttribute('class', `arrow r-${v.value}`);
+}
+  </script>
   </body>
 </html>
