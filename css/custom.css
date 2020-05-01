@@ -839,7 +839,7 @@ footer .some-text {
   padding-left: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .container-md {
     width: 100%;
     max-width: 100%;
@@ -933,7 +933,7 @@ footer .some-text {
 
   .sait-body .info-container.landing .info-block .block-item-1 {
     display: block;
-    padding: 0 73px;
+    padding: 0;
   }
 
   .sait-body
@@ -943,17 +943,17 @@ footer .some-text {
     span:first-child {
     width: 100%;
     font-size: 30.9px;
-    text-align: left;
+    text-align: center;
     display: block;
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
     width: 100%;
     font-size: 30.9px;
-    text-align: right;
+    text-align: center;
     display: block;
-    padding-right: 20px;
+    padding-right: 0px;
   }
 
   .sait-body .info-container.landing .info-block .block-item-2 {
@@ -1004,6 +1004,221 @@ footer .some-text {
   .pbar2 {
     left: 17px;
   }
+}
+
+@media (min-width: 430px) {
+  .container-md {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  header {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+
+  header .panel {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .logo-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .logo-container .logo {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .menu-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-container .menu-form {
+    /*width: 154px;*/
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu-container .menu-form .login {
+    width: 105px;
+    font-family: ITCAvantGardePro;
+    text-transform: uppercase;
+    padding: 0.25rem 0;
+    margin-left: 22px;
+  }
+  .menu-form .menu-items {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background: #fff;
+    padding: 0 60px 20px 20px;
+    z-index: 9;
+  }
+
+  .menu-container .menu-form .menu-items .item {
+    font-size: 19.07px;
+    margin: 5px 0;
+    font-family: ITCAvantGardePro;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .menu-container .menu-form .menu-items .item.active {
+    font-weight: 600;
+  }
+
+  .menu-container .menu-form .menu-items .item a.click {
+    color: #000;
+  }
+
+  .sait-body .input-content .description span {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .sait-body .input-content .apply-btn {
+    width: 230px;
+  }
+
+  .sait-body .info-container.landing .info-block {
+    width: 100%;
+  }
+
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .sait-body
+    .info-container.landing
+    .info-block
+    .block-item-1
+    span:first-child {
+    width: 100%;
+    font-size: 22.9px;
+    text-align: left;
+    display: block;
+    padding-left: 0;
+  }
+
+  .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+    width: 100%;
+    font-size: 22.9px;
+    text-align: right;
+    display: block;
+    padding-right: 0;
+  }
+
+  .sait-body .info-container.landing .info-block .block-item-2 {
+    width: 100%;
+    font-size: 25.63px;
+    text-align: center;
+    display: block;
+  }
+
+  .sait-body .input-content .apply-btn .apply {
+    width: 100%;
+    font-size: 25.73px;
+    height: 50px;
+  }
+
+  .sait-body .taim-content .row {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .sait-body .taim-content .rt-container {
+    width: 237px;
+    margin: 0 auto;
+  }
+
+  .sait-body .steps {
+    height: auto;
+  }
+
+  .sait-body .step-header {
+    font-size: 100%;
+  }
+
+  footer .description span {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  footer .all-rights {
+    width: auto;
+  }
+
+  footer .some-text {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .pbar2 {
+    left: 17px;
+  }
+}
+
+@media (min-width: 440px){
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-around;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 25.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 0;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 25.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 0;
+}
+}
+
+@media (min-width: 650px){
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-around;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 20px;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 20px;
+}
 }
 
 @media (min-width: 768px) {
@@ -1083,7 +1298,104 @@ footer .some-text {
   .menu-container .menu-form .menu-items .item a.click {
     color: #000;
   }
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 132px;
+    justify-content: space-around;
 }
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 20px;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 20px;
+}
+
+}
+
+
+
+@media (min-width: 865px){
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 183px;
+    justify-content: space-around;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 20px;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 20px;
+}
+}
+
+@media (min-width: 910px){
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 205px;
+    justify-content: space-around;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 20px;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 20px;
+}
+}
+
+@media (min-width: 1010px){
+  .sait-body .info-container.landing .info-block .block-item-1 {
+    display: flex;
+    padding: 0px 252px;
+    justify-content: space-around;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:first-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: left;
+  display: inline;
+  padding-left: 20px;
+}
+
+.sait-body .info-container.landing .info-block .block-item-1 span:last-child {
+  width: 100%;
+  font-size: 30.9px;
+  text-align: right;
+  display: inline;
+  padding-right: 20px;
+}
+}
+
 @media (min-width: 1100px) {
   header {
     justify-content: center;
@@ -1174,6 +1486,7 @@ footer .some-text {
   .sait-body .info-container.landing .info-block .block-item-1 {
     display: block;
     letter-spacing: 1.2px;
+    padding: 0;
   }
 
   .sait-body .info-container.landing .info-block .block-item-2 {
@@ -1202,7 +1515,7 @@ footer .some-text {
 
   .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
     width: 100%;
-    font-size: 60.53px;
+    font-size: 59.53px;
     font-weight: 500;
     color: #fff;
     font-family: ITCAvantGardePro;
@@ -1747,4 +2060,20 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .relative {
   position: relative;
+}
+
+.calendar-icon{
+  border-top-right-radius: 1.625rem;
+  border-bottom-right-radius: 1.625rem;
+}
+
+select.form-control{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 50%;
+    padding: 0 24px 0 11px;
+    cursor: pointer;
 }
