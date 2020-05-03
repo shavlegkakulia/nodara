@@ -43,6 +43,29 @@ body header {
   background: #fff;
 }
 
+.menu-container .menu-form .menu-items .item {
+  font-size: 19.07px;
+  margin: 5px 0;
+  font-family: ITCAvantGardePro;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+}
+
+.menu-container .menu-form .menu-items .item.active {
+  font-weight: 600;
+}
+
+.menu-container .menu-form .menu-items .item a.click {
+  color: #000;
+}
+
+.logo-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 body footer {
   width: 100%;
   height: 309px;
@@ -364,7 +387,7 @@ footer .some-text {
 }
 
 .sait-body .taim-content .rt-container .arrow {
-  transition: transform 1s ease-in-out;
+  transition: transform 1s linear;
   transform: rotate(-135deg);
 }
 
@@ -859,11 +882,7 @@ footer .some-text {
     padding: 0 10px;
   }
 
-  .logo-container {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+
 
   .logo-container .logo {
     height: 100%;
@@ -901,22 +920,7 @@ footer .some-text {
     z-index: 9;
   }
 
-  .menu-container .menu-form .menu-items .item {
-    font-size: 19.07px;
-    margin: 5px 0;
-    font-family: ITCAvantGardePro;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 400;
-  }
 
-  .menu-container .menu-form .menu-items .item.active {
-    font-weight: 600;
-  }
-
-  .menu-container .menu-form .menu-items .item a.click {
-    color: #000;
-  }
 
   .sait-body .input-content .description span {
     width: auto;
@@ -1026,11 +1030,7 @@ footer .some-text {
     padding: 0 10px;
   }
 
-  .logo-container {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+ 
 
   .logo-container .logo {
     height: 100%;
@@ -1068,22 +1068,7 @@ footer .some-text {
     z-index: 9;
   }
 
-  .menu-container .menu-form .menu-items .item {
-    font-size: 19.07px;
-    margin: 5px 0;
-    font-family: ITCAvantGardePro;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 400;
-  }
 
-  .menu-container .menu-form .menu-items .item.active {
-    font-weight: 600;
-  }
-
-  .menu-container .menu-form .menu-items .item a.click {
-    color: #000;
-  }
 
   .sait-body .input-content .description span {
     width: auto;
@@ -1181,11 +1166,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+
   font-size: 25.9px;
   text-align: left;
-  display: inline;
-  padding-left: 0;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1205,11 +1188,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+
   font-size: 30.9px;
   text-align: left;
-  display: inline;
-  padding-left: 20px;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1240,11 +1221,7 @@ footer .some-text {
     display: flex;
   }
 
-  .logo-container {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+
 
   .logo-container .logo {
     height: 100%;
@@ -1282,22 +1259,7 @@ footer .some-text {
     z-index: 9;
   }
 
-  .menu-container .menu-form .menu-items .item {
-    font-size: 19.07px;
-    margin: 5px 0;
-    font-family: ITCAvantGardePro;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 400;
-  }
-
-  .menu-container .menu-form .menu-items .item.active {
-    font-weight: 600;
-  }
-
-  .menu-container .menu-form .menu-items .item a.click {
-    color: #000;
-  }
+ 
   .sait-body .info-container.landing .info-block .block-item-1 {
     display: flex;
     padding: 0px 132px;
@@ -1305,11 +1267,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+  
   font-size: 30.9px;
   text-align: left;
-  display: inline;
-  padding-left: 20px;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1332,11 +1292,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+  
   font-size: 30.9px;
   text-align: left;
-  display: inline;
-  padding-left: 20px;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1356,11 +1314,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+ 
   font-size: 30.9px;
   text-align: left;
-  display: inline;
-  padding-left: 20px;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1380,11 +1336,9 @@ footer .some-text {
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:first-child {
-  width: 100%;
+ 
   font-size: 30.9px;
   text-align: left;
-  display: inline;
-  padding-left: 20px;
 }
 
 .sait-body .info-container.landing .info-block .block-item-1 span:last-child {
@@ -1418,21 +1372,9 @@ footer .some-text {
   }
 
   .menu-container .menu-form .menu-items .item {
-    font-size: 19.07px;
     margin: 0 15px;
-    font-family: ITCAvantGardePro;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 400;
   }
 
-  .menu-container .menu-form .menu-items .item.active {
-    font-weight: 600;
-  }
-
-  .menu-container .menu-form .menu-items .item a.click {
-    color: #000;
-  }
   header .panel {
     width: 1100px;
     height: 60px;
@@ -1744,7 +1686,7 @@ footer .some-text {
   }
 
   .sait-body .taim-content .rt-container .arrow {
-    transition: transform 1s ease-in-out;
+    transition: transform 1s linear;
     transform: rotate(224deg);
   }
 
@@ -1940,7 +1882,7 @@ footer .some-text {
   margin: 20px;
   float: left;
   transform: rotate(45deg);
-  transition: all 3s ease-in-out;
+  transition: all 3s linear;
 }
 .radialProgressBar .overlay {
   border-radius: 50%;
