@@ -388,46 +388,26 @@ footer .some-text {
 
 .sait-body .taim-content .rt-container .arrow {
   transition: transform 1s linear;
-  transform: rotate(-135deg);
-}
-
-.sait-body .taim-content .rt-container .arrow.r-0 {
+  transform: rotate(225deg);
   position: absolute;
   z-index: 99;
   left: 106px;
   top: 38px;
-  transform: rotate(225deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-1 {
-  position: absolute;
-  z-index: 99;
-  left: 106px;
-  top: 38px;
   transform: rotate(115deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-2 {
-  position: absolute;
-  z-index: 99;
-  left: 106px;
-  top: 38px;
   transform: rotate(45deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-3 {
-  position: absolute;
-  z-index: 99;
-  left: 106px;
-  top: 38px;
   transform: rotate(-13deg);
 }
 
 .sait-body .taim-content .rt-container .arrow.r-4 {
-  position: absolute;
-  z-index: 99;
-  left: 106px;
-  top: 38px;
   transform: rotate(-45deg);
 }
 
@@ -1650,34 +1630,23 @@ footer .some-text {
   .sait-body .taim-content .rt-container .arrow {
     transition: transform 1s linear;
     transform: rotate(224deg);
-  }
-
-  .sait-body .taim-content .rt-container .arrow.r-0 {
     top: 38px;
     left: 134px;
-    transform: rotate(224deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-1 {
-    top: 38px;
-    left: 134px;
     transform: rotate(116deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-2 {
-    top: 38px;
-    left: 134px;
     transform: rotate(44deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-3 {
-    top: 38px;
-    left: 134px;
     transform: rotate(-14deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-4 {
-    left: 134px;
     transform: rotate(-46deg);
   }
 
