@@ -1567,38 +1567,14 @@ footer .some-text {
     position: relative;
   }
 
-  .sait-body .taim-content .rt-container .line-first {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    top: 35px;
-    left: 32px;
-    z-index: 99;
-  }
-
   .sait-body .taim-content .rt-container.tok-content .line-first {
     width: 250px;
     left: 13px;
   }
 
-  .sait-body .taim-content .rt-container .line-first span {
-    font-size: 13.47px;
-    font-weight: 400;
-    color: #fff;
-    font-family: Arboria;
-    display: block;
-    text-align: center;
-  }
-
   .sait-body .taim-content .rt-container .line-second {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    bottom: 38px;
+  
     left: 43px;
-    z-index: 99;
   }
 
   .sait-body .taim-content .rt-container.tok-content .line-second {
@@ -1606,26 +1582,8 @@ footer .some-text {
     left: 19px;
   }
 
-  .sait-body .taim-content .rt-container .line-second span {
-    font-size: 13.47px;
-    font-weight: 400;
-    color: #fff;
-    font-family: Arboria;
-    display: block;
-    text-align: center;
-  }
 
   .sait-body .taim-content .rt-container .line-last {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    bottom: 0px;
-    left: 12px;
-    z-index: 99;
-  }
-
-  .sait-body .taim-content .rt-container .line-last span {
     font-size: 13.47px;
     font-weight: 400;
     color: #fff;
