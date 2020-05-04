@@ -1441,6 +1441,10 @@ footer .some-text {
     display: block;
   }
 
+  .sait-body .taim-content .rt-container .line-first {
+    left: 37px;
+  }
+
   .sait-body
     .info-container.landing
     .info-block
@@ -1649,41 +1653,30 @@ footer .some-text {
   }
 
   .sait-body .taim-content .rt-container .arrow.r-0 {
-    position: absolute;
-    z-index: 99;
     top: 38px;
     left: 134px;
     transform: rotate(224deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-1 {
-    position: absolute;
-    z-index: 99;
     top: 38px;
     left: 134px;
     transform: rotate(116deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-2 {
-    position: absolute;
-    z-index: 99;
     top: 38px;
     left: 134px;
     transform: rotate(44deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-3 {
-    position: absolute;
-    z-index: 99;
     top: 38px;
     left: 134px;
     transform: rotate(-14deg);
   }
 
   .sait-body .taim-content .rt-container .arrow.r-4 {
-    position: absolute;
-    z-index: 99;
-    top: 38px;
     left: 134px;
     transform: rotate(-46deg);
   }
