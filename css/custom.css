@@ -1939,3 +1939,41 @@ select.form-control{
     padding: 0 24px 0 11px;
     cursor: pointer;
 }
+
+.navbar{
+  position: absolute;
+  top: 5px;
+  right: 190px;
+  justify-content: flex-end;
+  background: #fff;
+}
+
+.navbar .navbar-toggler{
+  margin-top: 11px;
+  outline: none;
+  border: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 19.07px;
+    margin: 5px 0;
+    font-family: ITCAvantGardePro;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    right: 115px;
+  }
+
+}
+
+@media (min-width: 1099px)
+{
+  .navbar{
+    top: -5px;
+    right: 115px;
+  }
+}
